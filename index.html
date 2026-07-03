@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurae Luxury Salon & Beauty Studio - Where Beauty Meets Perfection. Experience world-class hair styling, bridal makeup, skincare, and spa therapies.">
+    <title>Aurae | Premium Luxury Salon & Spa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 class="loader-logo">AURAE</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://wa.me/1234567890" class="float-btn whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+1234567890" class="float-btn call" aria-label="Call Us Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <button id="back-to-top" class="float-btn to-top" aria-label="Back to Top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">AURAE</a>
+            
+            <nav class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#appointment" class="btn btn-primary nav-btn">Book Appointment</a>
+                <button class="mobile-menu-toggle" aria-label="Open Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content container text-center">
+                <span class="hero-tagline reveal-up">The Ultimate Beauty Experience</span>
+                <h1 class="reveal-up delay-1">Where Beauty Meets Perfection</h1>
+                <p class="reveal-up delay-2">Experience luxury beauty treatments, professional hair styling, skincare, makeup, spa therapies, and complete grooming services in a relaxing atmosphere.</p>
+                <div class="hero-buttons reveal-up delay-3">
+                    <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section container section-padding">
+            <div class="grid grid-2-col gap-md align-center">
+                <div class="about-images reveal-left">
+                    <div class="image-wrapper main-img">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Luxury Salon Interior" loading="lazy">
+                    </div>
+                    <div class="image-wrapper sub-img">
+                        <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=500&q=80" alt="Professional Hair Styling" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">Redefining The Standard of Premium Beauty Care</h2>
+                    <p class="lead-text">Aurae was founded with a singular, distinct beauty philosophy: to harmonize true indulgence with technical brilliance.</p>
+                    <p>Our meticulously designed sanctuary offers a peaceful escape from daily stress, providing an environment where your body, mind, and spirit can truly relax and unwind.</p>
+                    
+                    <div class="features-mini-grid">
+                        <div class="mini-feature">
+                            <i class="fas fa-award gold-icon"></i>
+                            <div>
+                                <h4>Experienced Professionals</h4>
+                                <p>Our highly trained artisans consistently set standards in modern styling and skin analytics.</p>
+                            </div>
+                        </div>
+                        <div class="mini-feature">
+                            <i class="fas fa-sparkles gold-icon"></i>
+                            <div>
+                                <h4>Premium Products</h4>
+                                <p>We exclusively use selected, environmentally responsible, luxury grade formulas.</p>
+                            </div>
+                        </div>
+                        <div class="mini-feature">
+                            <i class="fas fa-shield-virus gold-icon"></i>
+                            <div>
+                                <h4>Hygienic Environment</h4>
+                                <p>Medical-grade sanitation protocols run continuously across all styling lounges.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding bg-alt">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">What We Do</span>
+                <h2 class="section-title">Our Signature Services</h2>
+                <p class="section-desc">Explore our full line of luxury therapies, precision transformations, and customized grooming programs.</p>
+            </div>
+
+            <div class="container grid grid-4-col gap-sm">
+                <!-- Service Cards (16 Items) -->
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                    <h3>Hair Cut</h3>
+                    <p>Precision haute couture cuts customized to your structural facial frame.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-wind"></i></div>
+                    <h3>Hair Styling</h3>
+                    <p>Red-carpet luxury blowouts, updos, and editorial styling for events.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Hair Coloring</h3>
+                    <p>Signature Balayage, custom glossing, and dimensional color treatments.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-hot-tub"></i></div>
+                    <h3>Hair Spa</h3>
+                    <p>Deep-conditioning root restructuring rituals using pure botanical oils.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Keratin Treatment</h3>
+                    <p>Advanced smooth protein smoothing systems for sleek, frizz-free texture.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Facial</h3>
+                    <p>Tailored micro-circulation facials designed to restore radiance.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-pump-soap"></i></div>
+                    <h3>Cleanup</h3>
+                    <p>Pore-purifying detoxification removing deep structural cellular impurities.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Bridal Makeup</h3>
+                    <p>High-definition luxury bridal transformations engineered to last all day.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-star"></i></div>
+                    <h3>Party Makeup</h3>
+                    <p>Sophisticated, camera-ready creative cosmetics for any high-profile event.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Nail Art</h3>
+                    <p>Intricate, bespoke hand-painted extensions using durable structural gels.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-hands"></i></div>
+                    <h3>Manicure</h3>
+                    <p>Exfoliating dermal hand care combined with structural cuticle balancing.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <h3>Pedicure</h3>
+                    <p>Hydrotherapy foot bath treatments featuring smooth volcanic stone massage.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-burn"></i></div>
+                    <h3>Waxing</h3>
+                    <p>Ultra-smooth botanical organic wax systems optimized for sensitive skin profiles.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Threading</h3>
+                    <p>Flawless brow shaping and facial mapping via classic organic thread techniques.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-hand-holding-medical"></i></div>
+                    <h3>Skin Treatment</h3>
+                    <p>Advanced, non-invasive collagen remodeling and targeted dermal therapy.</p>
+                </div>
+                <div class="card service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Spa & Massage</h3>
+                    <p>Therapeutic structural body alignment using focused Swedish techniques.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-section container section-padding">
+            <div class="grid grid-2-col gap-md align-center">
+                <div class="why-text reveal-left">
+                    <span class="section-subtitle">Excellence Defined</span>
+                    <h2 class="section-title">Why True Connoisseurs Choose Aurae</h2>
+                    <p>We blend art and science to deliver clean, elevated results that match your unique style profile.</p>
+                    
+                    <div class="features-list-grid">
+                        <div class="feature-item-card">
+                            <i class="fas fa-user-check"></i>
+                            <span>Certified Beauty Experts</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-leaf"></i>
+                            <span>Premium Safe Products</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <span>Hygienic Clean Salon</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-box-open"></i>
+                            <span>Affordable Value Packages</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-comments"></i>
+                            <span>Personal Consultation</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-feather"></i>
+                            <span>Relaxing Spa Environment</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-microscope"></i>
+                            <span>Latest Clinic Equipment</span>
+                        </div>
+                        <div class="feature-item-card">
+                            <i class="fas fa-smile-beam"></i>
+                            <span>Warm & Friendly Staff</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-image reveal-right">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Premium Consultation" class="rounded-img" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section section-padding text-center">
+            <div class="stats-overlay"></div>
+            <div class="container grid grid-4-col position-relative">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="45">0</div>
+                    <div class="stat-label">Beauty Services</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="28">0</div>
+                    <div class="stat-label">Professional Stylists</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section section-padding bg-alt">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">Fair Investment</span>
+                <h2 class="section-title">Bespoke Experience Packages</h2>
+                <p class="section-desc">Select a curated multi-tier program designed for your routine maintenance or complete renewal needs.</p>
+            </div>
+
+            <div class="container grid grid-3-col gap-md align-stretch">
+                <!-- Plan 1 -->
+                <div class="card pricing-card reveal-up">
+                    <div class="pricing-header">
+                        <h3>Basic Beauty Care</h3>
+                        <div class="price">$85<span> / session</span></div>
+                        <span class="duration"><i class="far fa-clock"></i> 90 Minutes</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Standard Haircut & Blowout</li>
+                        <li><i class="fas fa-check"></i> Deep Botanical Face Cleansing</li>
+                        <li><i class="fas fa-check"></i> Classic Organic Manicure</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Premium Balayage Option</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced Dermal Balancing</li>
+                    </ul>
+                    <a href="#appointment" class="btn btn-secondary btn-full">Book Now</a>
+                </div>
+
+                <!-- Plan 2 (Highlighted) -->
+                <div class="card pricing-card featured reveal-up preferred-tier">
+                    <div class="badge">Most Requested</div>
+                    <div class="pricing-header">
+                        <h3>Bridal Luxe Package</h3>
+                        <div class="price">$320<span> / session</span></div>
+                        <span class="duration"><i class="far fa-clock"></i> 4 Hours</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> HD Airbrush Couture Makeup</li>
+                        <li><i class="fas fa-check"></i> Micro-Gold Dermal Radiance Facial</li>
+                        <li><i class="fas fa-check"></i> Luxury Gel Art & Deluxe Pedicure</li>
+                        <li><i class="fas fa-check"></i> Advanced Structural Hair Styling</li>
+                        <li><i class="fas fa-check"></i> Complementary Trial Consultation</li>
+                    </ul>
+                    <a href="#appointment" class="btn btn-primary btn-full">Book Premium Now</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="card pricing-card reveal-up">
+                    <div class="pricing-header">
+                        <h3>Premium Makeover</h3>
+                        <div class="price">$180<span> / session</span></div>
+                        <span class="duration"><i class="far fa-clock"></i> 2.5 Hours</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Dimensional Color / Balayage</li>
+                        <li><i class="fas fa-check"></i> Hydra-Infusion Moisture Facial</li>
+                        <li><i class="fas fa-check"></i> Deluxe Gel Spa Manicure</li>
+                        <li><i class="fas fa-check"></i> Scalp Therapy Volumizing Blowout</li>
+                        <li class="disabled"><i class="fas fa-times"></i> HD Airbrush Cosmetics</li>
+                    </ul>
+                    <a href="#appointment" class="btn btn-secondary btn-full">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section section-padding">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">Visual Artistry</span>
+                <h2 class="section-title">The Aurae Lookbook</h2>
+                <p class="section-desc">Browse real transformations created daily by our master technical styling staff.</p>
+            </div>
+
+            <!-- Custom Masonry Layout -->
+            <div class="masonry-gallery container">
+                <div class="masonry-item img-tall reveal-up">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Hair Styling Artistry" loading="lazy">
+                    <div class="gallery-overlay"><span>Hair Architecture</span></div>
+                </div>
+                <div class="masonry-item img-wide reveal-up">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" alt="Bridal Cosmetics Masterclass" loading="lazy">
+                    <div class="gallery-overlay"><span>Couture Bridal</span></div>
+                </div>
+                <div class="masonry-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Bespoke Gel Extension Designs" loading="lazy">
+                    <div class="gallery-overlay"><span>Bespoke Nail Art</span></div>
+                </div>
+                <div class="masonry-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80" alt="Advanced Dermal Hydration Therapies" loading="lazy">
+                    <div class="gallery-overlay"><span>Advanced Skincare</span></div>
+                </div>
+                <div class="masonry-item img-tall reveal-up">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Tranquil Organic Hydrotherapy Lounge" loading="lazy">
+                    <div class="gallery-overlay"><span>Spa Sanctuary</span></div>
+                </div>
+                <div class="masonry-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1620331704234-59d00d4e2096?auto=format&fit=crop&w=600&q=80" alt="High-Contrast Complex Custom Color Balayage" loading="lazy">
+                    <div class="gallery-overlay"><span>Color Transmutation</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Element (Injected dynamically or managed via script, explicitly built structural markup here) -->
+        <div id="gallery-lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="Enlarged View">
+            <div id="lightbox-caption"></div>
+        </div>
+
+        <!-- Appointment Process Section -->
+        <section class="process-section section-padding bg-alt">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">Simplified Paths</span>
+                <h2 class="section-title">Your Journey To Perfection</h2>
+            </div>
+            <div class="container grid grid-4-col gap-md">
+                <div class="process-card text-center reveal-up">
+                    <div class="process-num">01</div>
+                    <h4>Select Treatment</h4>
+                    <p>Browse our multi-tier services catalogue online or consult live with our specialists.</p>
+                </div>
+                <div class="process-card text-center reveal-up delay-1">
+                    <div class="process-num">02</div>
+                    <h4>Reserve Session</h4>
+                    <p>Pick a specific target day and precise hour window matching your flexible routine.</p>
+                </div>
+                <div class="process-card text-center reveal-up delay-2">
+                    <div class="process-num">03</div>
+                    <h4>Arrive Confident</h4>
+                    <p>Step inside our customized modern beauty lounges engineered for sensory relaxation.</p>
+                </div>
+                <div class="process-card text-center reveal-up delay-3">
+                    <div class="process-num">04</div>
+                    <h4>Embody Radiance</h4>
+                    <p>Walk back out into the world completely realigned with premium aesthetics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">Client Stories</span>
+                <h2 class="section-title">Endorsements From Our Guests</h2>
+            </div>
+
+            <div class="slider-wrapper container">
+                <div class="testimonial-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Aurae completely redefines the landscape of skincare. The balayage treatment I received here was flawless, and the interior architecture feels like an elegant luxury getaway."</p>
+                        <div class="client-meta">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Helena Vance" loading="lazy">
+                            <div>
+                                <h5>Helena Vance</h5>
+                                <span>Executive Producer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"Their bridal package was executed perfectly from the initial trial right down to the wedding details. The airbrushing survived long photo sessions under intense heat."</p>
+                        <div class="client-meta">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Seraphina Rose" loading="lazy">
+                            <div>
+                                <h5>Seraphina Rose</h5>
+                                <span>Fashion Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="review-text">"The deep conditioning botanical scalp therapies resolved issues I had carried for years. The safety and sanitization standards are exemplary."</p>
+                        <div class="client-meta">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Margot Sinclair" loading="lazy">
+                            <div>
+                                <h5>Margot Sinclair</h5>
+                                <span>Creative Director</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots"></div>
+                    <button class="slider-btn next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beauty Tips / Blog Section -->
+        <section class="blog-section section-padding bg-alt">
+            <div class="container text-center section-header">
+                <span class="section-subtitle">Aurae Intellect</span>
+                <h2 class="section-title">Bespoke Beauty Insights</h2>
+                <p class="section-desc">Expert advice from our senior stylists to help maintain your salon-fresh look at home.</p>
+            </div>
+            <div class="container grid grid-3-col gap-md">
+                <article class="card blog-card reveal-up">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1527799851257-3593a8435582?auto=format&fit=crop&w=600&q=80" alt="Hair Care Tips" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Hair Care</span>
+                        <h3>Maintaining Vibrancy In Customized Highlights</h3>
+                        <p>Discover the specific sulfate-free chemical formulas and critical wash temperatures required to prevent pigment loss.</p>
+                        <a href="#contact" class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card blog-card reveal-up delay-1">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Healthy Skin Tips" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Dermal Science</span>
+                        <h3>Optimal Morning Rehydration Matrix Profiles</h3>
+                        <p>Learn how layering low molecular weight hyaluronic serum structures under barrier protection formulas alters texture.</p>
+                        <a href="#contact" class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="card blog-card reveal-up delay-2">
+                    <div class="blog-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8797b2d58045?auto=format&fit=crop&w=600&q=80" alt="Bridal Preparation" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Bridal Strategy</span>
+                        <h3>Six-Month Counting Structural Prep Routines</h3>
+                        <p>A strategic breakdown mapping nutritional skin boosters, progressive peeling schedules, and hair health pathways.</p>
+                        <a href="#contact" class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section container section-padding">
+            <div class="text-center section-header">
+                <span class="section-subtitle">Clarifications</span>
+                <h2 class="section-title">Frequently Answered Protocols</h2>
+            </div>
+            
+            <div class="faq-accordion-wrapper">
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>Do I need to secure structural reservations weeks in advance?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We highly recommend booking 2 to 3 weeks ahead for prime weekend spots, though we save a few limited slots daily for urgent styling needs or last-minute requests.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>What specialized beauty product profiles do you support?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We work exclusively with elite, organic, and dermatologically tested brands that are 100% cruelty-free and free of parabens, sulfates, and harsh synthetic additives.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>Are customized out-of-studio destination bridal packages available?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, our senior creative cosmetic team can travel directly to your location, providing complete equipment sets for on-site luxury formatting.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>What are the exact hours of studio operational access?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We are open Monday through Saturday from 9:00 AM to 8:00 PM, and Sundays from 10:00 AM to 6:00 PM for pre-booked premium appointments.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>Do you offer home-based holistic luxury treatments?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Select specialized skin care regimens and therapy programs can be arranged through our VIP concierge services for private home appointments.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-trigger">
+                        <span>Which payment channels are supported by your standard processing?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We process all major international credit/debit networks, Apple Pay, Google Pay, secure bank transfers, and premium lifestyle concierge partner billing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Form & Contact Section -->
+        <section id="contact" class="contact-section section-padding bg-alt">
+            <div id="appointment" class="container grid grid-2-col gap-md align-stretch">
+                <!-- Appointment Form Wrapper -->
+                <div class="card form-container reveal-left">
+                    <h3>Secure Your Luxury Reservation</h3>
+                    <p>Provide your details below to request a personalized, luxury session at our studio.</p>
+                    
+                    <form id="booking-form" novalidate>
+                        <div class="form-group">
+                            <label for="user-name">Full Name</label>
+                            <input type="text" id="user-name" required placeholder="Ex. Vivienne Sterling">
+                            <span class="error-msg">Please enter your full name.</span>
+                        </div>
+                        <div class="grid grid-2-col gap-xs">
+                            <div class="form-group">
+                                <label for="user-phone">Phone Number</label>
+                                <input type="tel" id="user-phone" required placeholder="Ex. +1 (555) 019-2834">
+                                <span class="error-msg">Provide a valid phone number.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-email">Email Address</label>
+                                <input type="email" id="user-email" required placeholder="Ex. corporate@domain.com">
+                                <span class="error-msg">Provide a valid email address.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-service">Target Treatment Specialty</label>
+                            <select id="select-service" id="select-service" required>
+                                <option value="" disabled selected>Choose a primary service</option>
+                                <option value="haircut">Hair Cut & Creative Styling</option>
+                                <option value="balayage">Custom Coloring & Balayage</option>
+                                <option value="facial">Advanced Dermal Facials</option>
+                                <option value="bridal">Premium Bridal Luxe Tier</option>
+                                <option value="spa">Holistic Body Massage Therapy</option>
+                            </select>
+                            <span class="error-msg">Please select a service from our menu.</span>
+                        </div>
+                        <div class="grid grid-2-col gap-xs">
+                            <div class="form-group">
+                                <label for="booking-date">Preferred Date</label>
+                                <input type="date" id="booking-date" required>
+                                <span class="error-msg">Please pick a future date.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time">Preferred Time Window</label>
+                                <input type="time" id="booking-time" required>
+                                <span class="error-msg">Please select a valid hour slot.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-msg">Special Accommodations / Requests</label>
+                            <textarea id="user-msg" rows="4" placeholder="Mention any skin sensitivities or specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full ripple-effect">Submit Reservation Request</button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback hidden"></div>
+                </div>
+
+                <!-- Info & Map -->
+                <div class="contact-info-wrapper reveal-right">
+                    <div class="info-block card">
+                        <h3>Studio Main Headquarters</h3>
+                        <div class="info-link-item">
+                            <i class="fas fa-map-marked-alt gold-icon"></i>
+                            <p>742 Fifth Avenue, Penthouse Floor Suite 12B,<br>New York, NY 10153</p>
+                        </div>
+                        <div class="info-link-item">
+                            <i class="fas fa-envelope-open-text gold-icon"></i>
+                            <p>concierge@auraeluxury.com<br>reservations@auraeluxury.com</p>
+                        </div>
+                        <div class="info-link-item">
+                            <i class="fas fa-headset gold-icon"></i>
+                            <p>Desk: +1 (212) 555-8989<br>WhatsApp: +1 (212) 555-9000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-block card">
+                        <h3>Operational Access Timeline</h3>
+                        <div class="timing-row"><span>Mon - Sat</span><span>9:00 AM - 8:00 PM</span></div>
+                        <div class="timing-row"><span>Sunday</span><span>10:00 AM - 6:00 PM</span></div>
+                        <div class="timing-row holiday"><span>Holidays</span><span>Closed Concierge Check</span></div>
+                    </div>
+
+                    <!-- Embed Dynamic Map -->
+                    <div class="map-iframe-container card">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422934884784!2d-73.9754163!3d40.7607736!2m3!1f0!2f0!3f0!2m3!1m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f97bdb102b%3A0xea9b858f0c5856cc!2s5th%20Ave%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer-section">
+        <div class="container grid grid-4-col footer-grid section-padding">
+            <div class="footer-brand-col">
+                <h2 class="footer-logo">AURAE</h2>
+                <p>An elite beauty studio providing luxury hair care, advanced facials, and high-end bridal makeup.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram Access"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook Access"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest Access"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="LinkedIn Access"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Our Story</a></li>
+                    <li><a href="#services">Services Menu</a></li>
+                    <li><a href="#gallery">Visual Lookbook</a></li>
+                    <li><a href="#pricing">Tier Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Premium Offerings</h4>
+                <ul>
+                    <li><a href="#services">Couture Hair Architecture</a></li>
+                    <li><a href="#services">HD Bridal Extensions</a></li>
+                    <li><a href="#services">Dermal Remodeling</a></li>
+                    <li><a href="#services">Volcanic Hydro Therapy</a></li>
+                    <li><a href="#services">Bespoke Structural Gels</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Direct Contact</h4>
+                <p><i class="fas fa-phone-alt"></i> +1 (212) 555-8989</p>
+                <p><i class="fas fa-envelope"></i> boutique@aurae.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 742 5th Ave, New York, NY</p>
+            </div>
+        </div>
+        <div class="footer-bottom-bar text-center">
+            <p>&copy; 2026 AURAE Premium Luxury Salon & Spa Studio Network. All Intellectual Property Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
